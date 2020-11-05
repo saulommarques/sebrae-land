@@ -1,0 +1,63 @@
+doctype html
+html(lang="pt-br")
+  head
+    title Sebrae - Pronto para crescer?
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description' content="meta desc")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+
+    //- Meta Tags for Social Media
+    meta(property='og:title' content="base")
+    meta(property='og:description' content="base")
+    meta(property='og:image' content="base")
+    meta(property='og:url' content="base")
+
+    meta(name='twitter:card' content="base")
+    meta(name='twitter:site' content="base")
+    meta(name='twitter:title' content="base")
+    meta(name='twitter:image' content="base")
+    meta(name='twitter:url' content="base")
+
+    //- ==================================================
+    //- Webapp
+    //- ==================================================
+    link(rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' href='assets/images/favicon/favicon.png' sizes='45x45')
+    //link(rel='manifest' href='/manifest.json')
+    link(rel='mask-icon' href='/favicon/safari-pinned-tab.svg')
+    meta(name='apple-mobile-web-app-title' content="base")
+    meta(name='application-name' content="base")
+    meta(name='theme-color' content="base")
+
+    //- ==================================================
+    //- Stylesheets
+    //- ==================================================
+
+    //- fonts
+
+    //- css
+    link(rel="stylesheet" href="assets/stylesheets/style.css")
+
+
+  body
+    script(type="text/javascript").
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+            document.body.classList.add('mobile');
+
+
+    #general
+        include components/header.pug
+        include components/featured.pug
+        include components/benefits.pug
+        include components/operation.pug
+        include components/rules.pug
+        include components/testimonials.pug
+        include components/footer.pug
+
+    //- SCRIPTS
+    script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+
+    script(src='assets/javascripts/main.js')

@@ -1,0 +1,11 @@
+/*GENERAL*/
+@import 'general/general.css';
+
+/*COMPONENTS*/
+@import 'components/header';
+@import 'components/featured';
+@import 'components/benefits';
+@import 'components/operation';
+@import 'components/rules';
+@import 'components/testimonials';
+@import 'components/footer';
