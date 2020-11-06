@@ -39,3 +39,42 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #general {
+    section.rules {
+      .block-text {
+        margin-top: 18%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #general {
+    section.rules {
+      height: 500px;
+      background-size: cover;
+      background-position: right -160px top;
+
+      .block-text {
+        margin: 70px 0 0 0px;
+        max-width: 230px;
+      }
+
+      h3 {
+        font-size: 25px;
+        padding: 10px 20px;
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 80px;
+      }
+
+      p {
+        font-size: 28px;
+        /*margin-top: 60px;*/
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
+  }
+}

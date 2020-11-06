@@ -85,3 +85,43 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  #general {
+    .benefits {
+      padding-top: 40px;
+
+      &:before {
+        display: none;
+      }
+
+      .columns {
+        flex-direction: column;
+      }
+
+      .col-1 {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+
+      .col-2 {
+        max-width: 100%;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+
+      ul {
+        li {
+          font-size: 14px;
+
+          strong {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

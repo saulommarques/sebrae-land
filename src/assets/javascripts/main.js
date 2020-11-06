@@ -18,7 +18,7 @@ $(document).ready(function($){
                 autoplayHoverPause:true,
                 responsive: {
                     0: {
-                        autoHeight: true,
+                        autoHeight: false,
                         items: 1,
                     },
                     767: {

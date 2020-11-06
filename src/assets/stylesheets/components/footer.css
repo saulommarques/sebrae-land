@@ -91,3 +91,51 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #general {
+    footer {
+      .middle {
+        height: 20vw;
+      }
+
+      .logo-footer {
+        width: 180px;
+        height: 150px;
+        margin: 20px 0 0 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #general {
+    footer {
+      .middle {
+        height: auto;
+        flex-direction: column;
+      }
+
+      .logo-footer {
+        width: 190px;
+        height: 110px;
+        margin: 70px 0 0;
+      }
+
+      .links {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .box {
+        + .box {
+          margin-top: 20px;
+        }
+
+        &.four {
+          margin: 100px auto 50px;
+        }
+      }
+    }
+  }
+}

@@ -124,3 +124,41 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  #general {
+    section.operation {
+      h3 {
+        font-size: 35px;
+      }
+
+      ul {
+        flex-direction: column;
+
+        li {
+          width: 88%;
+          margin-left: auto;
+          margin-right: auto;
+          min-height: 370px;
+
+          + li {
+            margin-top: 60px;
+          }
+
+          img {
+            width: 110px;
+            height: 110px;
+          }
+
+          p {
+            font-size: 14px;
+
+            strong {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
