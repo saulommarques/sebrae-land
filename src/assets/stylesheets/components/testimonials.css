@@ -112,6 +112,8 @@ section.testimonials {
 
 @media screen and (max-width: 767px) {
   section.testimonials {
+    margin-top: 10px;
+
     &:before {
       display: none;
     }
@@ -124,24 +126,24 @@ section.testimonials {
         }
 
         .photo {
-          width: 215px;
-          height: 200px;
+          width: 185px;
+          height: 170px;
           margin: 0 auto;
         }
 
         .text {
-          padding: 0 30px;
+          padding: 0 10px;
           text-align: center;
           margin-top: 10px;
 
           p {
-            font-size: 12px;
+            font-size: 11px;
           }
         }
 
         .owl-prev,
         .owl-next {
-          top: 100px;
+          top: 80px;
           transform: translateY(0);
         }
       }

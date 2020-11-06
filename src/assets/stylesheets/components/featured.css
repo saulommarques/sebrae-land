@@ -77,9 +77,10 @@
         section.featured {
             overflow: hidden;
             position: relative;
-            background-position: -230px 85px;
+            background-position: -270px 85px;
             background-size: cover;
-            height: 685px;
+            height: 105vh;
+            min-height: 105vh;
             overflow: hidden;
             margin-top: -85px;
 
@@ -118,7 +119,7 @@
             }
 
             .block-button {
-                margin-top: 120px;
+                margin-top: 150px;
                 width: 100%;
 
                 span {

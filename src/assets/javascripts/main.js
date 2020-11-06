@@ -18,7 +18,7 @@ $(document).ready(function($){
                 autoplayHoverPause:true,
                 responsive: {
                     0: {
-                        autoHeight: false,
+                        autoHeight: true,
                         items: 1,
                     },
                     767: {
@@ -37,7 +37,7 @@ $(document).ready(function($){
 
     AOS.init({
         // disable: 'mobile',
-        offset: 150,
+        offset: 120,
         duration: 1200,
         delay: 100
     });
