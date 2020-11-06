@@ -1,5 +1,111 @@
 section.testimonials {
-    .middle-special {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  position: relative;
 
+  &:before {
+    content: "";
+    width: 110px;
+    height: 270px;
+    background: url(../images/bg-bullets.png) no-repeat center / contain;
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    z-index: 1;
+  }
+
+  .middle {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+
+    .carousel {
+      .box {
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .photo {
+        width: 215px;
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 40px;
+      }
+
+      .text {
+        margin-top: 25px;
+        padding-right: 50px;
+
+        h6 {
+          font-family: 'ob';
+          font-size: 16px;
+          font-weight: bold;
+          color: #0670f9;
+          line-height: 1.8;
+        }
+
+        p {
+          font-family: 'ob';
+          font-size: 13px;
+          font-weight: 500;
+          color: #0670f9;
+          line-height: 1.8;
+        }
+      }
+
+      .owl-prev,
+      .owl-next {
+        display: block;
+        width: 23px;
+        height: 41px;
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .owl-prev {
+        left: 0;
+        background-image: url(../images/arrow-left.png);
+      }
+
+      .owl-next {
+        right: 0;
+        background-image: url(../images/arrow-right.png);
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .owl-dot {
+          width: 8px;
+          height: 8px;
+          background-color: #bef3ff;
+          border-radius: 100%;
+
+          + .owl-dot {
+            margin-left: 11px;
+          }
+
+          &.active {
+            background-color: #0670f9;
+          }
+        }
+      }
     }
+  }
 }

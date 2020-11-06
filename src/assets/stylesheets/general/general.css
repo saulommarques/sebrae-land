@@ -4,6 +4,10 @@ body {
     height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body.video-open {
     overflow: hidden;
 }
@@ -20,19 +24,57 @@ body.video-open {
         min-height: 100%;
     }
 
-    .middle-special {
-        max-width: 1900px;
+    .middle {
+        /*max-width: 1170px;*/
+        max-width: 970px;
         margin: 0 auto;
         position: relative;
         z-index: 2;
+        padding: 0 15px;
+
+        /*@media screen and (max-width: 1215px) {
+            max-width: 970px;
+        }*/
+
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+
+    .btn-subscription {
+        display: block;
+        height: 47px;
+        line-height: 50px;
+        font-family: 'ob';
+        color: #27a33e;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 50px;
+        border-radius: 30px;
+        background-color: #fff;
+        text-decoration: none;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
-@media (max-width: 767px) {
-    #general {
-        .middle-special {
-            max-width: 100%;
-            padding: 0;
-        }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 #27a33e;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 }

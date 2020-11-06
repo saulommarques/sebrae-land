@@ -1,5 +1,41 @@
 #general {
-    section.rules {
+  section.rules {
+    height: 53vw;
+    background: url(../images/bg-rules.jpg) no-repeat center / auto 100%;
 
+    .middle {
+      overflow: hidden;
+      text-align: center;
     }
+
+    .block-text {
+      margin: 23% 0 0 100px;
+      max-width: 470px;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      font-family: 'Nunito';
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff;
+      background: url(../images/bg-blue.png) no-repeat center / contain;
+      padding: 10px 10px;
+      text-align: center;
+    }
+
+    p {
+      font-family: 'ob';
+      font-size: 30px;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.2;
+      margin-top: 25px;
+
+      strong {
+        font-weight: 900;
+      }
+    }
+  }
 }

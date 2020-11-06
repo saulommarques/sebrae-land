@@ -1,0 +1,64 @@
+#general {
+    .owl-carousel {
+        display: none;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        z-index: 1;
+
+        .owl-stage {
+            font-size: 0;
+            position: relative;
+            backface-visibility: hidden;
+        }
+
+        .owl-stage-outer {
+            position: relative;
+            overflow: hidden;
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        .owl-item {
+            display: inline-block;
+            vertical-align: top;
+
+            .item-wrapper {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .owl-nav.disabled,
+        .owl-dots.disabled {
+            display: none;
+        }
+
+        &.owl-loaded {
+            display: block;
+        }
+
+        &.owl-loading {
+            opacity: 0;
+            display: block;
+        }
+
+        &.owl-hidden {
+            opacity: 0;
+        }
+
+        &.owl-refresh .owl-item {
+            visibility: hidden;
+        }
+
+        &.owl-drag .owl-item {
+            touch-action: none;
+            user-select: none;
+        }
+
+        &.owl-grab {
+            cursor: move;
+            cursor: grab;
+        }
+    }
+}

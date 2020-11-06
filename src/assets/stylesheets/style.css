@@ -1,5 +1,7 @@
 /*GENERAL*/
-@import 'general/general.css';
+@import 'general/reset';
+@import 'general/font-face';
+@import 'general/general';
 
 /*COMPONENTS*/
 @import 'components/header';
@@ -9,3 +11,4 @@
 @import 'components/rules';
 @import 'components/testimonials';
 @import 'components/footer';
+@import 'components/owl-carousel';

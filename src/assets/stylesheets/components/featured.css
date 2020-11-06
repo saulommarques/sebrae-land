@@ -1,5 +1,56 @@
 #general {
     section.featured {
+        background: url(../images/bg-featured.jpg) no-repeat center top / contain;
+        height: 65vw;
 
+        .block-text {
+            float: right;
+            margin-top: 210px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            max-width: 650px;
+
+            h2 {
+                font-family: 'Nunito';
+                font-weight: 700;
+                font-size: 58px;
+                color: #fff;
+                line-height: 1.2;
+            }
+
+            p {
+                font-family: 'Nunito';
+                font-weight: 300;
+                font-size: 42px;
+                color: #fff;
+                line-height: 1.2;
+            }
+        }
+
+        .block-button {
+            margin-top: 20px;
+
+            span {
+                display: inline-block;
+                font-family: 'ob';
+                font-size: 16px;
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+        }
+
+        .btn-subscription {
+            padding: 0 30px;
+            animation: pulse 1.2s infinite;
+
+            &:hover {
+                transform: scale(1);
+            }
+        }
     }
 }

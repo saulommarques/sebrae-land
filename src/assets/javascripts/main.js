@@ -13,13 +13,16 @@ $(document).ready(function($){
                 navContainer: $wrapper,
                 nav: true,
                 dots: true,
+                autoplay:true,
+                autoplayTimeout:10000,
+                autoplayHoverPause:true,
                 responsive: {
                     0: {
-                        // autoHeight: true,
+                        autoHeight: true,
                         items: 1,
                     },
                     767: {
-                        // autoHeight: false,
+                        autoHeight: false,
                         items: 1,
                     }
                 }
@@ -31,4 +34,11 @@ $(document).ready(function($){
 
     // INIT
     carousel();
+
+    AOS.init({
+        // disable: 'mobile',
+        offset: 150,
+        duration: 1200,
+        delay: 100
+    });
 });

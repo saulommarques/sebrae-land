@@ -1,5 +1,93 @@
 #general {
-    footer {
+  footer {
+    padding-top: 10px;
+    background: url(../images/bg-footer.jpg) no-repeat center top / cover;
 
+    .middle {
+      height: 17vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    .logo-footer {
+      width: 240px;
+      height: 210px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      width: 68%;
+      padding-top: 40px;
+    }
+
+    .box {
+      padding-top: 38px;
+      text-align: center;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 26px 26px;
+      background-position: center top;
+      background-color: transparent;
+
+      &.one {
+        background-image: url(../images/icon-phone.png);
+      }
+
+      &.two {
+        background-image: url(../images/icon-internet.png);
+      }
+
+      &.three {
+        background-image: url(../images/icon-whatsapp.png);
+      }
+
+      &.four {
+        background-image: url(../images/icons-social-media.png);
+        background-size: 156px 26px;
+        width: 156px;
+
+        ul {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 26px;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            a {
+              display: block;
+              width: 28px;
+              height: 26px;
+            }
+          }
+        }
+      }
+
+      .tel,
+      .site,
+      .social,
+      a {
+        font-family: 'ob';
+        font-size: 13px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      span {
+        font-family: 'ob';
+        font-size: 10px;
+        font-weight: 300;
+        color: #fff;
+        line-height: .9;
+      }
+    }
+  }
 }
