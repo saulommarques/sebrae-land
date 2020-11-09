@@ -9,7 +9,7 @@
     }
 
     .block-text {
-      margin: 23% 0 0 100px;
+      margin: 22% 0 0 100px;
       max-width: 470px;
     }
 
@@ -44,7 +44,7 @@
   #general {
     section.rules {
       .block-text {
-        margin-top: 18%;
+        margin-top: 10%;
       }
     }
   }
@@ -71,7 +71,7 @@
       }
 
       p {
-        font-size: 28px;
+        font-size: 22px;
         /*margin-top: 60px;*/
         text-shadow: 1px 1px 1px #000;
       }
