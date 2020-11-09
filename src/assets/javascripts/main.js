@@ -32,8 +32,21 @@ $(document).ready(function($){
         })
     }
 
+    const headerFixed = function() {
+        $(window).scroll(function() {
+            const scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $(".header").addClass("fixed");
+            } else {
+                $(".header").removeClass("fixed");
+            }
+        });
+    }
+
     // INIT
     carousel();
+    headerFixed();
 
     AOS.init({
         // disable: 'mobile',

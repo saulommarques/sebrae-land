@@ -11,16 +11,17 @@
     }
 
     .logo-footer {
-      width: 240px;
-      height: 210px;
+      width: 160px;
+      height: 80px;
       object-fit: contain;
       object-position: center;
+      margin-top: 30px;
     }
 
     .links {
       display: flex;
       justify-content: space-between;
-      width: 68%;
+      width: 73%;
       padding-top: 40px;
     }
 
@@ -98,12 +99,6 @@
       .middle {
         height: 20vw;
       }
-
-      .logo-footer {
-        width: 180px;
-        height: 150px;
-        margin: 20px 0 0 40px;
-      }
     }
   }
 }
@@ -117,8 +112,6 @@
       }
 
       .logo-footer {
-        width: 190px;
-        height: 110px;
         margin: 70px 0 0;
       }
 
